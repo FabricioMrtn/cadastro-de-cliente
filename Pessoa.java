@@ -32,12 +32,24 @@ public class Pessoa {
 		return strnome;
 	}
 
+	public void setStrnome(String strnome) {
+		this.strnome = strnome;
+	}
+
 	public String getStrsobrenome() {
 		return strsobrenome;
 	}
 
+	public void setStrsobrenome(String strsobrenome) {
+		this.strsobrenome = strsobrenome;
+	}
+
 	public String getStrcpf() {
 		return strcpf;
+	}
+
+	public void setStrcpf(String strcpf) {
+		this.strcpf = strcpf;
 	}
 
 //	public boolean equals(Object ref) {
