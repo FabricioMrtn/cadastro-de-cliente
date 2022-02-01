@@ -17,22 +17,43 @@ public class cadastroServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("sucesso");
-		
+		System.out.println("Cadastrado:");
+		//pessoa
 		String nomeCliente = request.getParameter("nome");
 		String sobrenomeCliente = request.getParameter("sobrenome");
 		String cpf = request.getParameter("cpf");
+		//contato
+		String telefone1 = request.getParameter("telefone1");
+		String telefone2 = request.getParameter("telefone2");
+		String email = request.getParameter("email");
+		//endereco
+		String endereco = request.getParameter("endereco");
+		String numero = request.getParameter("numero");
+		String cep = request.getParameter("cep");
+		
 		Pessoa pessoa = new Pessoa();
+		Endereco end = new Endereco();
+		Contato contato = new Contato();
+		
 		pessoa.setStrnome(nomeCliente);
 		pessoa.setStrsobrenome(sobrenomeCliente);
 		pessoa.setStrcpf(cpf);
-		
+		contato.setStrTel1(telefone1);
+		contato.setStrTel2(telefone2);
+		contato.setStrEmail(email);
+		end.setStrrua(endereco);
+		end.setStrnumeroCasa(numero);
+		end.setStrCep(cep);
 		
 		
 		BancoProvisorio b = new BancoProvisorio();
 		b.adiciona(pessoa);
+		b.adiciona2(end);
+		b.adiciona3(contato);
 		
-		System.out.println(pessoa.getStrcpf());
+		System.out.println(pessoa.dadosDePessoa());
+		System.out.println(contato.dadosDeContato());
+		System.out.println(end.dadosDeEndereco());
 		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body> Cliente " + nomeCliente + " " + sobrenomeCliente + " cadastrado com sucesso ! </body></html>");

@@ -6,23 +6,33 @@ public class Endereco {
 	private String strbairro;
 	private String strcidade;
 	private String strestado;
-	private int intCep;
+	private String strCep;
 	
-	public Endereco(String strrua, String strnumeroCasa, String strbairro, String strcidade, String strestado, int intCep) {
+	public Endereco() {}
+	
+	public Endereco(String strrua, String strnumeroCasa, String strbairro, String strcidade, String strestado, String strCep) {
 		this.strrua = strrua;
 		this.strnumeroCasa = strnumeroCasa;
 		this.strbairro = strbairro;
 		this.strcidade = strcidade;
 		this.strestado = strestado;
-		this.intCep = intCep;
+		this.strCep = strCep;
 		
 		if(this.strrua == null || this.strnumeroCasa == null || this.strbairro == null || 
-				this.strcidade == null || this.strestado == null || this.intCep == 0) {
+				this.strcidade == null || this.strestado == null || this.strCep == null) {
 			System.out.println("ERRO ! Faltam dados.");
 			throw new NullPointerException("Faltam dados");
 		}
 	}
 	
+	public String getStrCep() {
+		return strCep;
+	}
+
+	public void setStrCep(String strCep) {
+		this.strCep = strCep;
+	}
+
 	public String dadosDeEndereco() {
 		String dados = "\nRua: " + this.strrua;
 		dados += "\nNumero Residencia: " + this.strnumeroCasa;
