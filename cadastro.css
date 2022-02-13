@@ -1,0 +1,57 @@
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:antiquewhite;
+}
+#top{
+    background-color: goldenrod;
+    text-align:center;
+    position: relative;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+#fundo{
+    background-color:darkgoldenrod;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    position: relative;
+}
+#titulo{
+    text-align: left;
+    position: relative;
+    margin-left: 350px;
+    margin-right: auto;
+}
+#pessoa{
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#contato{
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+#endereco{
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#final{
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    margin-left: 200px;
+    margin-right: 200px;
+}
