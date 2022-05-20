@@ -51,16 +51,7 @@ public class Pessoa {
 	public void setStrcpf(String strcpf) {
 		this.strcpf = strcpf;
 	}
-
-//	public boolean equals(Object ref) {
-//		Pessoa p = (Pessoa) ref;
-//		if (this.strcpf == p.strcpf) {
-//			System.out.println("ERRO ! CPF REPETIDO");
-//			return false;
-//		}
-//		return true;
-//	}
-//	
+	
 	public String valida(Object ref) {
 		Pessoa p = (Pessoa) ref;
 		if (this.strcpf == p.strcpf) {

@@ -18,15 +18,15 @@ public class cadastroServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Cadastrado:");
-		//pessoa
+		
 		String nomeCliente = request.getParameter("nome");
 		String sobrenomeCliente = request.getParameter("sobrenome");
 		String cpf = request.getParameter("cpf");
-		//contato
+		
 		String telefone1 = request.getParameter("telefone1");
 		String telefone2 = request.getParameter("telefone2");
 		String email = request.getParameter("email");
-		//endereco
+		
 		String endereco = request.getParameter("endereco");
 		String numero = request.getParameter("numero");
 		String cep = request.getParameter("cep");

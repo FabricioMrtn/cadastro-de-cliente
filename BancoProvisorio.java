@@ -27,7 +27,7 @@ public class BancoProvisorio {
 	
 	//--------------------------------------------------------------------------------------
 	
-private static ArrayList<Contato> Lista3 = new ArrayList<Contato>();
+	private static ArrayList<Contato> Lista3 = new ArrayList<Contato>();
 	
 	public void adiciona3(Contato c) {
 		BancoProvisorio.Lista3.add(c);
@@ -36,6 +36,4 @@ private static ArrayList<Contato> Lista3 = new ArrayList<Contato>();
 	public ArrayList<Contato> getContato(){
 		return BancoProvisorio.Lista3;
 	}
-	
-	//Aparentemente esta funcionando, mesmo divergindo do original.
 }
